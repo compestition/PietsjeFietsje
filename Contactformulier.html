@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Winkelwagen</title>
+        <link rel="stylesheet" href="../Stylesheets/Stylesheet1.css" />
+        <link rel="stylesheet" href="../Stylesheets/Stylesheet2.css">
+    </head>
+    <body>
+        <!-- Algemene Header -->
+        <header>
+            <a href="../Scherm 5 - Homepagina/homepagina.html" class="logo">Piets Fiets</a>
+        <!-- Menu Checkbox -->
+            <input type="checkbox" id="menu_checkbox" class="menu_checkbox">
+            <label for="menu_checkbox" class="menu_label">Menu</label>
+        <!-- Navigatie Menu -->
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="../Scherm 5 - Homepagina/homepagina.html">Homepagina</a></li>
+                    <li class="dropdown">
+                        <a href="../Scherm 2 - Productoverzicht/Productoverzicht.html">Producten</a>
+                        <ul class="producten_menu">
+                            <li class="dropdown">
+                                <a href="../Scherm 0 - 404/404.html">Fietsen</a>
+                                <ul class="producten_menu">
+                                    <li><a href="../Scherm 0 - 404/404.html">Bakfietsen</a></li>
+                                    <li><a href="../Scherm 0 - 404/404.html">Stadsfietsen</a></li>
+                                    <li><a href="../Scherm 0 - 404/404.html">Mountainbikes</a></li>
+                                    <li><a href="../Scherm 0 - 404/404.html">Vouwfietsen</a></li>
+                                    <li><a href="../Scherm 0 - 404/404.html">Fatbikes</a></li>
+                                    <li><a href="../Scherm 0 - 404/404.html">Elektrische Fietsen</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../Scherm 0 - 404/404.html">Fietstassen</a></li>
+                            <li><a href="../Scherm 0 - 404/404.html">Fietslampen</a></li>
+                            <li><a href="../Scherm 0 - 404/404.html">Fietszadels</a></li>
+                            <li><a href="../Scherm 0 - 404/404.html">Fietssturen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Scherm 4 - Contactformulier/Contactformulier.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="../Scherm 0 - 404/404.html">Account</a>
+                        <ul class="producten_menu">
+                            <li><a href="../Scherm 0 - 404/404.html">Accountinformatie</a></li>
+                            <li><a href="../Scherm 0 - 404/404.html">Bestellingen</a></li>
+                            <li><a href="../Scherm 0 - 404/404.html">Uitloggen</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="winkelwagen_afbeelding">
+                            <a href="../Scherm 1 - Winkelwagen/Winkelwagen.html">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+        <!-- Retourbeleid -->
+            <section class="retourbeleid">
+                <h1>Retourbeleid</h1>
+                <p>Bij Piets Fiets doen we er alles aan om ervoor te zorgen dat je blij bent met je aankoop. Toch kan het gebeuren dat je iets wilt retourneren, en dat is geen probleem! We maken het je zo makkelijk mogelijk om producten terug te sturen.</p>
+                <ol>
+                    <li>Eerst meld je je retour aan via je account. Zoek de bestelling op die je wilt terugsturen, klik op 'Retour aanmelden' en volg de instructies.</li>
+                    <li>Vervolgens zorg je ervoor dat het product goed verpakt is, het liefst in de originele verpakking, en voeg je het retourformulier toe aan het pakket.</li> 
+                    <li>Daarna kun je het pakket afgeven bij een van onze retourlocaties of bij een DHL- of PostNL-punt.</li>
+                </ol>
+                <p>Het is belangrijk dat je het product binnen <strong>30 dagen</strong> na ontvangst retourneert. Let erop dat het product ongebruikt is en in de originele verpakking zit. Helaas kunnen gepersonaliseerde producten niet geretourneerd worden.</p>
+                <p>Het goede nieuws is dat retourneren bij ons gratis is! Heb je vragen over het retourproces? Neem gerust contact op met onze klantenservice via het formulier rechts</p>
+            </section>
+        <!-- Contactformulier -->
+            <section class="contact">
+                <h2>Contact opnemen met Piets Fiets</h2>
+                <p>Vul hier onder het contactformulier in! Wij nemen zo snel mogelijk contact met je op.</p>
+                <form>
+                    <label for="voornaam"></label>
+                    <input type="text" id="voornaam" placeholder="Vul hier je voornaam in">
+                    
+                    <label for="achternaam"></label>
+                    <input type="text" id="achternaam" placeholder="Vul hier je achternaam in">
+                
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Vul hier je E-mailadres in" name="email" required>
+                    
+                    <label for="telefoonnummer"></label>
+                    <input type="number" id="telefoonnummer" placeholder="Vul hier je telefoonnummer in" name="telefoonnummer" required>
+
+                    <label for="bericht"></label>
+                    <textarea id="bericht" placeholder="Laat hier een bericht achter" name="bericht" required></textarea>
+                    
+                    <button type="submit">Verzenden</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer_container">
+                <h3>Neem contact op met Piets Fiets!</h3>
+                <p>Blijf op de hoogte met Piets Fiets!
+                    Altijd de beste fiets voor elk avontuur. Volg ons op sociale media en mis geen enkele update!
+                    <br><br> © 2024 Piets Fiets | Ontdek de wereld, trap de toekomst in!
+                </p>
+                <div class="sociaal_media">
+                    <a href="../Scherm 0 - 404/404.html"><img src="../Images/Facebook.svg" alt="Facebook pagina van Piets Fiets"></a>
+                    <a href="../Scherm 0 - 404/404.html"><img src="../Images/Messenger.svg" alt="Messenger contact met Piets Fiets"></a>
+                    <a href="../Scherm 0 - 404/404.html"><img src="../Images/Twitter.svg" alt="Twitter profiel van Piets Fiets"></a>
+                    <a href="../Scherm 0 - 404/404.html"><img src="../Images/Whatsapp.svg" alt="Whatsapp contact met Piets Fiets"></a>
+                </div> 
+            </div> 
+        </footer>
+
+    </body>
+</html>

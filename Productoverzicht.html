@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Productoverzicht</title>
+        <link rel="stylesheet" href="../Stylesheets/Stylesheet1.css" />
+        <link rel="stylesheet" href="../Stylesheets/Stylesheet2.css">
+    </head>
+    <body>
+        <!-- Algemene Header -->
+        <header>
+            <a href="../Scherm 5 - Homepagina/homepagina.html" class="logo">Piets Fiets</a>
+        <!-- Menu Checkbox -->
+            <input type="checkbox" id="menu_checkbox" class="menu_checkbox">
+            <label for="menu_checkbox" class="menu_label">Menu</label>
+        <!-- Navigatie Menu -->
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="../Scherm 5 - Homepagina/homepagina.html">Homepagina</a></li>
+                    <li class="dropdown">
+                        <a href="../Scherm 2 - Productoverzicht/Productoverzicht.html">Producten</a>
+                        <ul class="producten_menu">
+                            <li class="dropdown">
+                                <a href="../Scherm 0 - 404/404.html">Fietsen</a>
+                                <ul class="producten_menu">
+                                    <li><a href="../Scherm 0 - 404/404.html">Bakfietsen</a></li>
+                                    <li><a href="../Scherm 0 - 404/404.html">Stadsfietsen</a></li>
+                                    <li><a href="../Scherm 0 - 404/404.html">Mountainbikes</a></li>
+                                    <li><a href="../Scherm 0 - 404/404.html">Vouwfietsen</a></li>
+                                    <li><a href="../Scherm 0 - 404/404.html">Fatbikes</a></li>
+                                    <li><a href="../Scherm 0 - 404/404.html">Elektrische Fietsen</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../Scherm 0 - 404/404.html">Fietstassen</a></li>
+                            <li><a href="../Scherm 0 - 404/404.html">Fietslampen</a></li>
+                            <li><a href="../Scherm 0 - 404/404.html">Fietszadels</a></li>
+                            <li><a href="../Scherm 0 - 404/404.html">Fietssturen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Scherm 4 - Contactformulier/Contactformulier.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="../Scherm 0 - 404/404.html">Account</a>
+                        <ul class="producten_menu">
+                            <li><a href="../Scherm 0 - 404/404.html">Accountinformatie</a></li>
+                            <li><a href="../Scherm 0 - 404/404.html">Bestellingen</a></li>
+                            <li><a href="../Scherm 0 - 404/404.html">Uitloggen</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="winkelwagen_afbeelding">
+                            <a href="../Scherm 1 - Winkelwagen/Winkelwagen.html">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="producten_pagina">
+                <div class="header_container">
+                    <h1>Alle producten</h1>
+                    <input type="text" placeholder="Product zoeken."/>
+                </div>
+        <!-- Filter systeem -->
+                <div class="filter_form_container">
+                    <form class="filter_form">
+                        <div class="filter_item">
+        <!-- Kleuren filter -->
+                            <label for="kleur">Kleur</label>
+                            <select id="kleur" name="kleur">
+                                <option value="allekleuren">Alle kleuren</option>
+                                <option value="beige">Beige</option>
+                                <option value="blauw">Blauw</option>
+                                <option value="bruin">Bruin</option>
+                                <option value="geel">Geel</option>
+                                <option value="grijs">Grijs</option>
+                                <option value="groen">Groen</option>
+                                <option value="oranje">Oranje</option>
+                                <option value="paars">Paars</option>
+                                <option value="rood">Rood</option>
+                                <option value="roze">Roze</option>
+                                <option value="turquoise">Turquoise</option>
+                                <option value="wit">Wit</option>
+                                <option value="zwart">Zwart</option>
+                            </select>
+                        </div>
+        <!-- Prijzen filter -->
+                        <div class="filter_item">
+                            <label for="prijs">Prijs</label>
+                            <select id="prijs" name="prijs">
+                                <option value="geenvoorkeur">Geen voorkeur</option>
+                                <option value="0-50">€0 - €50</option>
+                                <option value="50-100">€50 - €100</option>
+                                <option value="100-150">€100 - €150</option>
+                                <option value="150-200">€150 - €200</option>
+                                <option value="200-300">€200 - €300</option>
+                                <option value="300-400">€300 - €400</option>
+                                <option value="400-500">€400 - €500</option>
+                                <option value="500-750">€500 - €750</option>
+                                <option value="750-1000">€750 - €1000</option>
+                                <option value="1000-1500">€1000 - €1500</option>
+                                <option value="1500+">€1500+</option>
+                            </select>
+                        </div>
+        <!-- Type filter -->
+                        <div class="filter_item">
+                            <label for="type">Type</label>
+                            <select id="type" name="type">
+                                <option value="alles">Alles</option>
+                                <option value="mountainbike">Mountainbike</option>
+                                <option value="racefiets">Racefiets</option>
+                                <option value="elektrischefiets">Elektrische Fiets</option>
+                                <option value="stadsfiets">Stadsfiets</option>
+                                <option value="bakfiets">Bakfiets</option>
+                                <option value="vouwfiets">Vouwfiets</option>
+                                <option value="fatbike">Fatbike</option>
+                                <option value="kinderfiets">Kinderfiets</option>
+                                <option value="hybridefiets">Hybride Fiets</option>
+                                <option value="fietsaccessoires">Fietsaccessoires</option>
+                                <option value="fietslampen">Fietslampen</option>
+                                <option value="fietszadels">Fietszadels</option>
+                                <option value="fietstassen">Fietstassen</option>
+                                <option value="fietssloten">Fietssloten</option>
+                                <option value="fietskettingen">Fietskettingen</option>
+                                <option value="fietshelmen">Fietshelmen</option>
+                                <option value="fietscomputers">Fietscomputers</option>
+                                <option value="fietsbanden">Fietsbanden</option>
+                                <option value="fietspompen">Fietspompen</option>
+                                <option value="fietsdragers">Fietsdragers</option>
+                            </select>
+                        </div>
+        <!-- Sorteren op -->
+                        <div class="filter_item">
+                            <label for="sorteren_op">Sorteren op</label>
+                            <select id="sorteren_op" name="sorteren_op">
+                                <option value="relevant">Meest relevant</option>
+                                <option value="populair">Populairste</option>
+                                <option value="nieuw">Nieuwste producten</option>
+                                <option value="prijs-laag-hoog">Prijs: Laag naar hoog</option>
+                                <option value="prijs-hoog-laag">Prijs: Hoog naar laag</option>
+                                <option value="beoordeling-hoog-laag">Beoordeling: Hoog naar laag</option>
+                                <option value="beoordeling-laag-hoog">Beoordeling: Laag naar hoog</option>
+                                <option value="korting">Hoogste korting</option>
+                                <option value="a-z">Naam: A tot Z</option>
+                                <option value="z-a">Naam: Z tot A</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+        <!-- Producten -->
+                <div class="product_grid">
+        <!-- Product 1 -->
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fatbike_1.png" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">AGM BT250 FatBike</p>
+                                <p class="product_prijs">€1.115</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 2 -->
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/kettingspray_1.webp" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">WD-40 Kettingspray</p>
+                                <p class="product_prijs">€4,99</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+       <!-- Product 3 -->
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/Electrische_fiets_1.webp" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Elektrische Fiets</p>
+                                <p class="product_prijs">€1.229</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+                    
+        <!-- Product 4 -->
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fatbike_2.png" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">AGRON Fatbike</p>
+                                <p class="product_prijs">€1.529</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+       <!-- Product 5 -->         
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fatbike_3.png" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">VESPA Fatbike</p>
+                                <p class="product_prijs">€1.729</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 6 -->        
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fietsbel_1.png" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">BASIL fietsbel</p>
+                                <p class="product_prijs">€4,99</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 7 -->                 
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fietsbel_2.jpg" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Fietsbel</p>
+                                <p class="product_prijs">€3,99</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 8 -->                
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fiets_accesoires_1.jpg" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Accesoire set</p>
+                                <p class="product_prijs">€120,-</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 9 -->                 
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fietshelm_1.png" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">ABUS Fietshelm</p>
+                                <p class="product_prijs">€69,98</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 10 -->                 
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fietsketting_1.png" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Fietsketting lang</p>
+                                <p class="product_prijs">€35,76</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 11 -->                 
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fietslampen_1.webp" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Fietslampen set</p>
+                                <p class="product_prijs">€19,99</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 12 --> 
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fietsolie_1.png" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Olie</p>
+                                <p class="product_prijs">€5,95</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 13 -->                 
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fietsschoenen_1.webp" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Fietsschoenen</p>
+                                <p class="product_prijs">€69,96</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 14 -->                 
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fietsstandaard_1.webp" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Standaard</p>
+                                <p class="product_prijs">€35,95</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 15 -->                 
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/fietszadel_1.webp" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Selle Royal fietszadel</p>
+                                <p class="product_prijs">€39,45</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 16 -->               
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/Fietsstas_1.webp" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Fietstas</p>
+                                <p class="product_prijs">€37,50</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 17 -->                
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/proteinebar_1.webp" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Proteine bar</p>
+                                <p class="product_prijs">€5,99</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 18 -->                
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/reparatieset_1.avif" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Walfort reparatieset</p>
+                                <p class="product_prijs">€2,99</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 19 -->                
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/sportflex_1.webp" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Sport Bidon</p>
+                                <p class="product_prijs">€9,99</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+        <!-- Product 20 -->                
+                    <div class="product_kaart">
+                        <div class="kaart_foto">
+                            <img src="../Images/Fietsen/reflectoren_1.png" alt="Product" />
+                        </div>
+                        <div class="product_informatie">
+                            <div class="product_naam_prijs">
+                                <p class="product_naam">Reflectoren</p>
+                                <p class="product_prijs">€7,99</p>
+                            </div>
+                            <div class="winkelwagen_kaart">
+                                <img src="../Images/Winkelwagen.png" alt="Winkelwagen" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer_container">
+                <h3>Neem contact op met Piets Fiets!</h3>
+                <p>Blijf op de hoogte met Piets Fiets!
+                    Altijd de beste fiets voor elk avontuur. Volg ons op sociale media en mis geen enkele update!
+                    <br><br> © 2024 Piets Fiets | Ontdek de wereld, trap de toekomst in!
+                </p>
+                <div class="sociaal_media">
+                    <a href="../Scherm 0 - 404/404.html"><img src="../Images/Facebook.svg" alt="Facebook pagina van Piets Fiets"></a>
+                    <a href="../Scherm 0 - 404/404.html"><img src="../Images/Messenger.svg" alt="Messenger contact met Piets Fiets"></a>
+                    <a href="../Scherm 0 - 404/404.html"><img src="../Images/Twitter.svg" alt="Twitter profiel van Piets Fiets"></a>
+                    <a href="../Scherm 0 - 404/404.html"><img src="../Images/Whatsapp.svg" alt="Whatsapp contact met Piets Fiets"></a>
+                </div> 
+            </div> 
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    background-color: #2600ff;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.menu_checkbox {
+    display: none;
+}
+
+.menu_label {
+    display: none;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav_links li {
+    list-style: none;
+    position: relative;
+}
+
+header nav a, .nav_links span {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 60px;
+    display: block;
+}
+
+header nav a:hover, .nav_links span:hover {
+    background-color: #fbff00;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.producten_menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 150px;
+    background-color: white;
+    padding: 10px 0;
+    z-index: 1001;
+    max-height: none;
+    overflow: visible;
+}
+
+.dropdown:hover > .producten_menu {
+    display: block;
+}
+
+.producten_menu .dropdown {
+    position: relative;
+}
+
+.producten_menu .dropdown .producten_menu {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: -100%;
+    z-index: 1000;
+}
+
+.producten_menu .dropdown:hover > .producten_menu {
+    display: block;
+}
+
+.producten_menu a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 14px;
+    line-height: 1.4;
+    height: 30px;
+}
+
+.producten_menu a:hover {
+    background-color: #fbff00;
+    color: black;
+}
+
+header .winkelwagen_afbeelding img {
+    width: 25px;
+    height: auto;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        padding: 10px 15px;
+        height: 50px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .menu_checkbox {
+        display: none;
+    }
+
+    .menu_label {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        z-index: 2001;
+    }
+
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #2600ff;
+        max-height: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        z-index: 2000;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .nav_links li {
+        width: 100%;
+        display: block;
+    }
+
+    .nav_links a {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        border-bottom: 1px solid #444;
+        background-color: #2600ff;
+        line-height: 1.2;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .menu_checkbox:checked + .menu_label + nav .nav_links {
+        display: flex;
+        flex-direction: column;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .producten_menu {
+        position: static;
+        width: 100%;
+        display: block;
+        background-color: #2600ff;
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .producten_menu a {
+        padding: 8px 12px;
+        font-size: 14px;
+        color: white;
+        background-color: transparent;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .producten_menu a:hover {
+        background-color: #fbff00;
+        color: black;
+    }
+
+    .producten_menu .dropdown .producten_menu {
+        display: none;
+        position: static;
+        z-index: 2000;
+        width: 100%;
+        background-color: #2600ff;
+        color: black;
+        box-sizing: border-box;
+    }
+
+    .producten_menu .dropdown:hover > .producten_menu {
+        display: block;
+        width: 100%;
+    }
+
+    .image_class {
+        width: 100px;
+        height: auto;
+    }
+}
